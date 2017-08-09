@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0552984177E17972184132C9 /* libPods-HZPageView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 105C45841935D0104E81B810 /* libPods-HZPageView.a */; };
+		21A3B81D1F3B022700033533 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21A3B8081F3B022700033533 /* Assets.xcassets */; };
+		21A3B81E1F3B022700033533 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3B8091F3B022700033533 /* LaunchScreen.storyboard */; };
+		21A3B81F1F3B022700033533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A3B80B1F3B022700033533 /* Main.storyboard */; };
+		21A3B8201F3B022700033533 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A3B80D1F3B022700033533 /* Info.plist */; };
+		21A3B8211F3B022700033533 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B80E1F3B022700033533 /* main.m */; };
+		21A3B8241F3B022700033533 /* UIColor+randomColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B8121F3B022700033533 /* UIColor+randomColor.m */; };
+		21A3B8261F3B022700033533 /* anchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B8181F3B022700033533 /* anchor.m */; };
+		21A3B8271F3B022700033533 /* TrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B81B1F3B022700033533 /* TrainViewController.m */; };
+		21A3B8331F3B028600033533 /* HZContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B82A1F3B028600033533 /* HZContentView.m */; };
+		21A3B8341F3B028600033533 /* HZPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B82D1F3B028600033533 /* HZPageView.m */; };
+		21A3B8351F3B028600033533 /* HZTitleStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B82F1F3B028600033533 /* HZTitleStyle.m */; };
+		21A3B8361F3B028600033533 /* HZTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B8311F3B028600033533 /* HZTitleView.m */; };
+		21A3B83A1F3B036600033533 /* placholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 21A3B8381F3B036600033533 /* placholder.png */; };
+		21A3B83B1F3B036600033533 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21A3B8391F3B036600033533 /* types.plist */; };
+		21A3B8421F3B045800033533 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B83E1F3B045800033533 /* AppDelegate.m */; };
+		21A3B8441F3B045800033533 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A3B8411F3B045800033533 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		105C45841935D0104E81B810 /* libPods-HZPageView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HZPageView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21A3B8081F3B022700033533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21A3B80A1F3B022700033533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		21A3B80C1F3B022700033533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		21A3B80D1F3B022700033533 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A3B80E1F3B022700033533 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21A3B8111F3B022700033533 /* UIColor+randomColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+randomColor.h"; sourceTree = "<group>"; };
+		21A3B8121F3B022700033533 /* UIColor+randomColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+randomColor.m"; sourceTree = "<group>"; };
+		21A3B8171F3B022700033533 /* anchor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = anchor.h; sourceTree = "<group>"; };
+		21A3B8181F3B022700033533 /* anchor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = anchor.m; sourceTree = "<group>"; };
+		21A3B81A1F3B022700033533 /* TrainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainViewController.h; sourceTree = "<group>"; };
+		21A3B81B1F3B022700033533 /* TrainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainViewController.m; sourceTree = "<group>"; };
+		21A3B8291F3B028600033533 /* HZContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZContentView.h; sourceTree = "<group>"; };
+		21A3B82A1F3B028600033533 /* HZContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZContentView.m; sourceTree = "<group>"; };
+		21A3B82B1F3B028600033533 /* HZContentViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZContentViewDelegate.h; sourceTree = "<group>"; };
+		21A3B82C1F3B028600033533 /* HZPageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZPageView.h; sourceTree = "<group>"; };
+		21A3B82D1F3B028600033533 /* HZPageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZPageView.m; sourceTree = "<group>"; };
+		21A3B82E1F3B028600033533 /* HZTitleStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTitleStyle.h; sourceTree = "<group>"; };
+		21A3B82F1F3B028600033533 /* HZTitleStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTitleStyle.m; sourceTree = "<group>"; };
+		21A3B8301F3B028600033533 /* HZTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTitleView.h; sourceTree = "<group>"; };
+		21A3B8311F3B028600033533 /* HZTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HZTitleView.m; sourceTree = "<group>"; };
+		21A3B8321F3B028600033533 /* HZTitleViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZTitleViewDelegate.h; sourceTree = "<group>"; };
+		21A3B8381F3B036600033533 /* placholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placholder.png; sourceTree = "<group>"; };
+		21A3B8391F3B036600033533 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		21A3B83D1F3B045800033533 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		21A3B83E1F3B045800033533 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		21A3B8401F3B045800033533 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		21A3B8411F3B045800033533 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		21D262E31F345214000FF57D /* HZPageViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HZPageViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D822EF4F2FBACCE4DFDCC11 /* Pods-HZPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZPageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HZPageView/Pods-HZPageView.debug.xcconfig"; sourceTree = "<group>"; };
+		F1818C991FE22CAF49824C31 /* Pods-HZPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HZPageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-HZPageView/Pods-HZPageView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21D262E01F345214000FF57D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0552984177E17972184132C9 /* libPods-HZPageView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DEC22DE8FA5C201958A7208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				105C45841935D0104E81B810 /* libPods-HZPageView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21A3B8051F3B022700033533 /* HZPageViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B83C1F3B045800033533 /* Basics */,
+				21A3B8371F3B036600033533 /* resources */,
+				21A3B8281F3B028600033533 /* HZPageView */,
+				21A3B8081F3B022700033533 /* Assets.xcassets */,
+				21A3B8091F3B022700033533 /* LaunchScreen.storyboard */,
+				21A3B80B1F3B022700033533 /* Main.storyboard */,
+				21A3B80D1F3B022700033533 /* Info.plist */,
+				21A3B80E1F3B022700033533 /* main.m */,
+				21A3B8111F3B022700033533 /* UIColor+randomColor.h */,
+				21A3B8121F3B022700033533 /* UIColor+randomColor.m */,
+				21A3B8151F3B022700033533 /* 业务组件 */,
+			);
+			path = HZPageViewDemo;
+			sourceTree = "<group>";
+		};
+		21A3B8151F3B022700033533 /* 业务组件 */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B8161F3B022700033533 /* Model */,
+				21A3B8191F3B022700033533 /* ViewController */,
+			);
+			path = "业务组件";
+			sourceTree = "<group>";
+		};
+		21A3B8161F3B022700033533 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B8171F3B022700033533 /* anchor.h */,
+				21A3B8181F3B022700033533 /* anchor.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		21A3B8191F3B022700033533 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B81A1F3B022700033533 /* TrainViewController.h */,
+				21A3B81B1F3B022700033533 /* TrainViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		21A3B8281F3B028600033533 /* HZPageView */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B8291F3B028600033533 /* HZContentView.h */,
+				21A3B82A1F3B028600033533 /* HZContentView.m */,
+				21A3B82B1F3B028600033533 /* HZContentViewDelegate.h */,
+				21A3B82C1F3B028600033533 /* HZPageView.h */,
+				21A3B82D1F3B028600033533 /* HZPageView.m */,
+				21A3B82E1F3B028600033533 /* HZTitleStyle.h */,
+				21A3B82F1F3B028600033533 /* HZTitleStyle.m */,
+				21A3B8301F3B028600033533 /* HZTitleView.h */,
+				21A3B8311F3B028600033533 /* HZTitleView.m */,
+				21A3B8321F3B028600033533 /* HZTitleViewDelegate.h */,
+			);
+			path = HZPageView;
+			sourceTree = "<group>";
+		};
+		21A3B8371F3B036600033533 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B8381F3B036600033533 /* placholder.png */,
+				21A3B8391F3B036600033533 /* types.plist */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		21A3B83C1F3B045800033533 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				21A3B83D1F3B045800033533 /* AppDelegate.h */,
+				21A3B83E1F3B045800033533 /* AppDelegate.m */,
+				21A3B8401F3B045800033533 /* ViewController.h */,
+				21A3B8411F3B045800033533 /* ViewController.m */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		21D262DA1F345214000FF57D = {
+			isa = PBXGroup;
+			children = (
+				21A3B8051F3B022700033533 /* HZPageViewDemo */,
+				21D262E41F345214000FF57D /* Products */,
+				B4AF79E02C25437159C8BA7D /* Pods */,
+				0DEC22DE8FA5C201958A7208 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		21D262E41F345214000FF57D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21D262E31F345214000FF57D /* HZPageViewDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B4AF79E02C25437159C8BA7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D822EF4F2FBACCE4DFDCC11 /* Pods-HZPageView.debug.xcconfig */,
+				F1818C991FE22CAF49824C31 /* Pods-HZPageView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21D262E21F345214000FF57D /* HZPageViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21D262FA1F345214000FF57D /* Build configuration list for PBXNativeTarget "HZPageViewDemo" */;
+			buildPhases = (
+				2E2F6DCDE978C2FC8691EECC /* [CP] Check Pods Manifest.lock */,
+				21D262DF1F345214000FF57D /* Sources */,
+				21D262E01F345214000FF57D /* Frameworks */,
+				21D262E11F345214000FF57D /* Resources */,
+				D290474203BA9A70F66E0CC8 /* [CP] Embed Pods Frameworks */,
+				AD6441E373DE4331A9AD1D2E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HZPageViewDemo;
+			productName = HZPageView;
+			productReference = 21D262E31F345214000FF57D /* HZPageViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21D262DB1F345214000FF57D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = multway;
+				TargetAttributes = {
+					21D262E21F345214000FF57D = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 374XCD99UJ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 21D262DE1F345214000FF57D /* Build configuration list for PBXProject "HZPageViewDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 21D262DA1F345214000FF57D;
+			productRefGroup = 21D262E41F345214000FF57D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21D262E21F345214000FF57D /* HZPageViewDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21D262E11F345214000FF57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A3B83B1F3B036600033533 /* types.plist in Resources */,
+				21A3B83A1F3B036600033533 /* placholder.png in Resources */,
+				21A3B8201F3B022700033533 /* Info.plist in Resources */,
+				21A3B81F1F3B022700033533 /* Main.storyboard in Resources */,
+				21A3B81D1F3B022700033533 /* Assets.xcassets in Resources */,
+				21A3B81E1F3B022700033533 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E2F6DCDE978C2FC8691EECC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD6441E373DE4331A9AD1D2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZPageView/Pods-HZPageView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D290474203BA9A70F66E0CC8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HZPageView/Pods-HZPageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21D262DF1F345214000FF57D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21A3B8211F3B022700033533 /* main.m in Sources */,
+				21A3B8351F3B028600033533 /* HZTitleStyle.m in Sources */,
+				21A3B8421F3B045800033533 /* AppDelegate.m in Sources */,
+				21A3B8341F3B028600033533 /* HZPageView.m in Sources */,
+				21A3B8441F3B045800033533 /* ViewController.m in Sources */,
+				21A3B8331F3B028600033533 /* HZContentView.m in Sources */,
+				21A3B8271F3B022700033533 /* TrainViewController.m in Sources */,
+				21A3B8261F3B022700033533 /* anchor.m in Sources */,
+				21A3B8241F3B022700033533 /* UIColor+randomColor.m in Sources */,
+				21A3B8361F3B028600033533 /* HZTitleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21A3B8091F3B022700033533 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21A3B80A1F3B022700033533 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		21A3B80B1F3B022700033533 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21A3B80C1F3B022700033533 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21D262F81F345214000FF57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21D262F91F345214000FF57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21D262FB1F345214000FF57D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D822EF4F2FBACCE4DFDCC11 /* Pods-HZPageView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 374XCD99UJ;
+				INFOPLIST_FILE = "$(SRCROOT)/HZPageViewDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.multway.HZPageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		21D262FC1F345214000FF57D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1818C991FE22CAF49824C31 /* Pods-HZPageView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 374XCD99UJ;
+				INFOPLIST_FILE = "$(SRCROOT)/HZPageViewDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.multway.HZPageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21D262DE1F345214000FF57D /* Build configuration list for PBXProject "HZPageViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D262F81F345214000FF57D /* Debug */,
+				21D262F91F345214000FF57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21D262FA1F345214000FF57D /* Build configuration list for PBXNativeTarget "HZPageViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21D262FB1F345214000FF57D /* Debug */,
+				21D262FC1F345214000FF57D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21D262DB1F345214000FF57D /* Project object */;
+}

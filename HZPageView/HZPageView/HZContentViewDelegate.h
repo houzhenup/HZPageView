@@ -10,5 +10,5 @@
 @class HZContentView;
 @protocol HZContentViewDelegate <NSObject>
 -(void)contentView:(HZContentView *)contentView targetIndex:(int)index;
--(void)contentView:(HZContentView *)contentView targetIndex:(int)index process:(CGFloat)procss;
+-(void)contentView:(HZContentView *)contentView currentIndex:(int)currentIndex targetIndex:(int)index process:(CGFloat)procss;
 @end

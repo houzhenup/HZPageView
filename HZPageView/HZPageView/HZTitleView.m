@@ -15,7 +15,7 @@
 @interface HZTitleView()
 @property (nonatomic,strong) UIScrollView *scrollView;
 @property (nonatomic,strong) NSMutableArray *titleLabels;
-@property (nonatomic,strong) UILabel *currntLabel;
+@property (nonatomic,assign) NSInteger currntindex;
 @property (nonatomic,strong) UIView *bottomView;
 @end
 
@@ -65,7 +65,7 @@
         titleLabel.textAlignment = NSTextAlignmentCenter;
         if (i == 0) {
             titleLabel.textColor = self.titleStyle.selectColor;
-            self.currntLabel = titleLabel;
+            _currntindex = 0;
             
         }else{
             titleLabel.textColor = self.titleStyle.normalColor;
@@ -123,22 +123,23 @@
     UILabel *selectLabel = (UILabel *)tap.view;
     [self adjustSelectTitleLabel:selectLabel];
     
-    [_delegate titleView:self targetIndex:self.currntLabel.tag];
+    [_delegate titleView:self targetIndex:_currntindex];
     
     
 }
 -(void)adjustSelectTitleLabel:(UILabel *)selectLabel{
-    if (selectLabel == self.currntLabel) {
+    if (selectLabel.tag == _currntindex) {
         return;
     }
     selectLabel.textColor  = self.titleStyle.selectColor;
-    self.currntLabel.textColor = self.titleStyle.normalColor;
-    self.currntLabel = selectLabel;
+    UILabel *currntLabel = self.titleLabels[_currntindex];
+    currntLabel.textColor = self.titleStyle.normalColor;
+    _currntindex = selectLabel.tag;
    
     if (self.titleStyle.isShowScrollLine) {
         
     [UIView animateWithDuration:0.2 animations:^{
-      self.bottomView.frame = CGRectMake(self.currntLabel.frame.origin.x, self.bounds.size.height - self.titleStyle.scrollLineHight, self.currntLabel.frame.size.width, self.titleStyle.scrollLineHight);
+      self.bottomView.frame = CGRectMake(selectLabel.frame.origin.x, self.bounds.size.height - self.titleStyle.scrollLineHight, selectLabel.frame.size.width, self.titleStyle.scrollLineHight);
     }];
       
     }
@@ -157,41 +158,39 @@
 
 }
 
-#pragma mark HZContentViewDelegate
-
--(void)contentView:(HZContentView *)contentView targetIndex:(int)index{
+-(void)setTargetIndex:(NSInteger)index{
+ 
     UILabel *selectLabel = self.titleLabels[index];
+   
     [self adjustSelectTitleLabel:selectLabel];
-    
 }
--(void)contentView:(HZContentView *)contentView targetIndex:(int)index process:(CGFloat)procss{
+
+-(void)setcurrentIndex:(NSInteger)currentIndex TargetIndex:(NSInteger)index  process:(CGFloat)procss{
 
     UILabel *targtLabel = self.titleLabels[index];
-   
-    //1.Labl 颜色渐变
+    UILabel *currentLabel = self.titleLabels[currentIndex];
+    
+    //1.Label 颜色渐变
     NSArray *selectRGB =[UIColor getRGBWithColor:self.titleStyle.selectColor];
     NSArray *normalRGB =[UIColor getRGBWithColor:self.titleStyle.normalColor];
     NSArray *deltaColorArray = [self getdeltaColorWithfirstColor:selectRGB secondColor:normalRGB];
+    
     float r =  [normalRGB[0] floatValue] + [deltaColorArray[0] floatValue]*procss;
     float g =  [normalRGB[1] floatValue] + [deltaColorArray[1] floatValue]*procss;
     float b =  [normalRGB[2] floatValue] + [deltaColorArray[2] floatValue]*procss;
     float r1 = [selectRGB[0] floatValue] - [deltaColorArray[0] floatValue]*procss;
     float g1 = [selectRGB[1] floatValue] - [deltaColorArray[1] floatValue]*procss;
     float b1 = [selectRGB[2] floatValue] - [deltaColorArray[2] floatValue]*procss;
-    targtLabel.textColor = [UIColor colorWithRed:r green:g blue:b alpha:1];
-    self.currntLabel.textColor = [UIColor colorWithRed:r1 green:g1 blue:b1 alpha:1];
-
     
+    targtLabel.textColor = [UIColor colorWithRed:r green:g blue:b alpha:1];
+    currentLabel.textColor = [UIColor colorWithRed:r1 green:g1 blue:b1 alpha:1];
     //2.指示器长度渐变
     if(self.titleStyle.isShowScrollLine){
-        float deltaX = targtLabel.frame.origin.x - self.currntLabel.frame.origin.x;
-        float deltaW = targtLabel.frame.size.width - self.currntLabel.frame.size.width;
-        self.bottomView.frame = CGRectMake(self.currntLabel.frame.origin.x + deltaX*procss, self.bounds.size.height - self.titleStyle.scrollLineHight,self.currntLabel.frame.size.width +deltaW *procss , self.titleStyle.scrollLineHight);
         
+        float deltaX = targtLabel.frame.origin.x - currentLabel.frame.origin.x;
+        float deltaW = targtLabel.frame.size.width - currentLabel.frame.size.width;
+        self.bottomView.frame = CGRectMake(currentLabel.frame.origin.x + deltaX*procss, self.bounds.size.height - self.titleStyle.scrollLineHight,currentLabel.frame.size.width +deltaW *procss , self.titleStyle.scrollLineHight);
     }
-    
-    
-
     
 }
 -(NSArray *)getdeltaColorWithfirstColor:(NSArray *)firstRGB secondColor:(NSArray *)secondRGB{

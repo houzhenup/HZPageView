@@ -11,13 +11,15 @@
 #import "HZTitleViewDelegate.h"
 #import "HZContentViewDelegate.h"
 
-@interface HZTitleView : UIView<HZContentViewDelegate>
+@interface HZTitleView : UIView
 @property (nonatomic,strong) NSArray *titles;
 @property (nonatomic,strong) HZTitleStyle  *titleStyle;
 @property (nonatomic,weak) id<HZTitleViewDelegate> delegate;
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles titleStyle:(HZTitleStyle *)titleStyle;
 
+-(void)setTargetIndex:(NSInteger)index;
+-(void)setcurrentIndex:(NSInteger)currentIndex TargetIndex:(NSInteger)index process:(CGFloat)procss;
 
 
 @end

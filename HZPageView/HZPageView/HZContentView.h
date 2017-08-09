@@ -9,12 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "HZTitleViewDelegate.h"
 #import "HZContentViewDelegate.h"
-@interface HZContentView : UIView<UICollectionViewDataSource,HZTitleViewDelegate,UICollectionViewDelegate>
+@interface HZContentView : UIView<UIScrollViewDelegate>
 
 @property (nonatomic,strong) NSArray *childVcs;
 @property (nonatomic,strong) UIViewController *parentVc;
-@property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,weak) id<HZContentViewDelegate> delegate;
+@property (nonatomic,strong) UIScrollView *scrollView;
+
 - (instancetype)initWithFrame:(CGRect)frame childVcs:(NSArray *)childVcs parentVc:(UIViewController *)parentVc;
+-(void)setCurrentIndex:(NSInteger)index;
 
 @end

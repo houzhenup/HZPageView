@@ -19,8 +19,10 @@
         self.selectColor = [UIColor orangeColor];
         self.fontSize = 15;
         self.scrollLineColor = [UIColor orangeColor];
-        self.scrollLineHight = 2;
+        self.scrollLineHight = 3;
         self.isShowScrollLine = YES;
+        self.isScrollEnable = YES;
+
     }
     return self;
 }

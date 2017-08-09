@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "HZTitleStyle.h"
+#import "HZTitleViewDelegate.h"
+#import "HZContentViewDelegate.h"
 
 @interface HZPageView : UIView
 
@@ -17,7 +19,7 @@
 
 @property (nonatomic,strong) NSArray *childVcs;
 
-@property (nonatomic,strong) UIViewController *parentVc;
+@property (nonatomic,strong) UIViewController  *parentVc;
 
 - (instancetype)initWithFrame:(CGRect)frame titles:(NSArray *)titles childVcs:(NSArray *)childVcs parentVc:(UIViewController *)parentVc;
 

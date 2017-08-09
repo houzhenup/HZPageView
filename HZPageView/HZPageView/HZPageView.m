@@ -14,9 +14,10 @@
 
 
 
-@interface HZPageView ()
+@interface HZPageView ()<HZTitleViewDelegate,HZContentViewDelegate>
 /**注释 */
 @property (nonatomic,strong) HZTitleView *titleView;
+@property (nonatomic,strong) HZContentView *contentView;
 
 
 @end
@@ -58,19 +59,32 @@
 
 -(void)setupTitleView{
     
-    
     HZTitleView *titlsView = [[HZTitleView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.titleStyle.titleHeight) titles:self.titles titleStyle:self.titleStyle];
     self.titleView = titlsView;
-    self.titleView.backgroundColor = [UIColor randomColor];
+    self.titleView.delegate = self;
+
+    self.titleView.backgroundColor = [UIColor whiteColor];
     [self addSubview:titlsView];
 }
 -(void)setupConentView{
     
-    HZContentView *contentView = [[HZContentView alloc]initWithFrame:CGRectMake(0,self.titleStyle.titleHeight, self.bounds.size.width,self.bounds.size.height - self.titleStyle.titleHeight) childVcs:self.childVcs parentVc:self.parentVc];
-    [self addSubview:contentView];
-    contentView.backgroundColor = [UIColor randomColor];
-    self.titleView.delegate = contentView;
-    contentView.delegate = self.titleView;
+    self.contentView = [[HZContentView alloc]initWithFrame:CGRectMake(0,self.titleStyle.titleHeight, self.bounds.size.width,self.bounds.size.height - self.titleStyle.titleHeight) childVcs:self.childVcs parentVc:self.parentVc];
+    [self addSubview:self.contentView];
+    self.contentView.backgroundColor = [UIColor randomColor];
+    self.contentView.delegate = self;
+}
+
+#pragma mark TitleViewDelegate
+-(void)titleView:(HZTitleView *)titleView targetIndex:(NSInteger)index{
+    [self.contentView setCurrentIndex:index];
+}
+
+#pragma mark HZContentViewDelegate
+-(void)contentView:(HZContentView *)contentView targetIndex:(int)index{
+    [self.titleView setTargetIndex:index];
+}
+-(void)contentView:(HZContentView *)contentView currentIndex:(int)currentIndex targetIndex:(int)index process:(CGFloat)procss{
+    [self.titleView setcurrentIndex:currentIndex TargetIndex:index process:procss];
 
 }
 /*
